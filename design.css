@@ -1,31 +1,34 @@
+@import "compass/css3";
+
 html, body {
     /*  Esto se aplicara a todo la enmaquetacion */
     font-size: 4px;
-    font-family: font;
+    font-family: Trebuchet MS;
 }
 
-.books-grid-container {
-    display: flex; 
+.books-container {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    display: flex;
     background-color: #F5FCFB;
-    align-content: space-around;
     justify-content: center;
+    justify-content: space-around;
+
 } 
 
-.books-grid{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+.book-item{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.books-grid book {
+
+.book {
     border-radius: 2rem;
     box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5); /*Esto da sombra a la imagen */
-    /* display: block;*/
     margin-bottom: 2rem;
     overflow: hidden;   /* Para que la imagen se recorte y no hayan barras de posición */
     width: 226px;
-    align-content: space-around;
-    justify-content: space-around;
 }
 
 .book__image {
@@ -44,6 +47,7 @@ html, body {
     color: #019c97;
     font-size: 3rem;
     font-weight: bold;
+    font-style: black;
 }
 
 .book__size {
@@ -67,4 +71,8 @@ html, body {
   text-align: right;
   display: inline-block;
   color:  #cccccc;
+}
+
+.book__more:hover {
+  color:  #818181;
 }

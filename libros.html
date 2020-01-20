@@ -16,10 +16,10 @@
         <nav class="school-nav">
           <ul class="school-nav-list">
             <li>
-              <h1 class="text-header">Colegio Montano</h1>
+              <h1>Colegio Montano</h1>
             </li>
             <li>
-              <h2 class="text-header">Libros electrónicos</h2>
+              <h2>Libros electrónicos</h2>
             </li>
           </ul>
         </nav>
@@ -38,92 +38,116 @@
       </div> 
     </header><!-- Termina el main header con flex -->
 
-    <!-- Los libros ordenados con flex -->
-    <div class="books-container">
-      <!-- Este es el primer libro -->
-      <div class="book-item">
-        <div class="book">
-          <div class="book__image" style="background-image: url(https://upload.wikimedia.org/wikipedia/en/0/05/Littleprince.JPG)" ></div>
-          <div class="book__footer">
-            <div class="book__meta">
-              <div class="book__title">
-                El principito de Antoine..
+    <div class="wrapper"> <!--El wrapper de todo el contenido-->
+      
+      <!-- Menu paquetes por grado -->
+      <div class="left-menu">
+        <h2>PAQUETES</h2>
+        <h3 class="selected_pack"> Primero Básico (8)</h3>
+        <h3>Segundo Básico (12)</h3>
+        <h3>Tercero Básico (40)</h3>
+        <h3>Cuarto Bachillerato en Ciencias y Letas (5)</h3>
+        <h3>Quinto Bachillerato en Ciencias y Letas (5)</h3>
+        <h3>Cuarto Bachillerato en Ciencias y Letas (5)</h3>
+        <h3>Quinto Bachillerato en Ciencias y Letas (5)</h3>
+        <div class="pack_divider"></div>
+        <div class="pack-actions">
+          <h2>AGREGAR PAQUETE:</h2>
+          <div class="add-pack">
+            <input type="text" class="search_pack" placeholder="Escriba el nombre acá.." >
+            <i class="fa fa-plus-circle" style="font-size:30px;color:#2196F3;padding: 22px 3px"></i>
+          </div>
+        </div>
+      </div> <!-- Termina aside de paquetes -->
+
+      <!-- Los libros ordenados con flex -->
+      <div class="books-container">
+        <!-- Este es el primer libro -->
+        <div class="book-item">
+          <div class="book">
+            <div class="book__image" style="background-image: url(https://upload.wikimedia.org/wikipedia/en/0/05/Littleprince.JPG)" ></div>
+            <div class="book__footer">
+              <div class="book__meta">
+                <div class="book__title">
+                  El principito de Antoine..
+                </div>
+                <div class="book__size">
+                  15mb
+                </div>
               </div>
-              <div class="book__size">
-                15mb
+              <div class="book__actions">
+                <button class="book__more">
+                  <i class="fa fa-ellipsis-v fa-5x"></i> <!-- Clase de los 3 botones de ver mas -->
+                </button>
               </div>
             </div>
-            <div class="book__actions">
-              <button class="book__more">
-                <i class="fa fa-ellipsis-v fa-5x"></i> <!-- Clase de los 3 botones de ver mas -->
-              </button>
+          </div>
+        </div>
+        <!-- Este es el segundo libro -->
+        <div class="book-item">
+          <div class="book">
+            <div class="book__image" style="background-image: url(https://image.slidesharecdn.com/fisicaparacienciaseingenieriaserway-jewett7maed-141022224459-conversion-gate02/95/fisica-para-ciencias-e-ingenieria-serway-jewett-7ma-ed-vol-1-1-638.jpg?cb=1414018077)" ></div>
+            <div class="book__footer">
+              <div class="book__meta">
+                <div class="book__title">
+                  Física de Serway
+                </div>
+                <div class="book__size">
+                  15mb
+                </div>
+              </div>
+              <div class="book__actions">
+                <button class="book__more">
+                  <i class="fa fa-ellipsis-v fa-5x"></i> <!-- Clase de los 3 botones de ver mas -->
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Este es el tercer libro -->
+        <div class="book-item">
+          <div class="book">
+            <div class="book__image" style="background-image: url(https://www.popularlibros.com/imagenes_grandes/9788478/978847829089.JPG)" ></div>
+            <div class="book__footer">
+              <div class="book__meta">
+                <div class="book__title">
+                  Cálculo
+                </div>
+                <div class="book__size">
+                  15mb
+                </div>
+              </div>
+              <div class="book__actions">
+                <button class="book__more">
+                  <i class="fa fa-ellipsis-v fa-5x"></i> <!-- Clase de los 3 botones de ver mas -->
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Este es el cuarto libro -->
+        <div class="book-item">
+          <div class="book">
+            <div class="book__image" style="background-image: url(https://statics.convergencia.trevenque.es/portadas/Originales/PUBLIDISA_3/PUB0190599.jpg)" ></div>
+            <div class="book__footer">
+              <div class="book__meta">
+                <div class="book__title">
+                  Matemáticas 2
+                </div>
+                <div class="book__size">
+                  15mb
+                </div>
+              </div>
+              <div class="book__actions">
+                <button class="book__more">
+                  <i class="fa fa-ellipsis-v fa-5x"></i> <!-- Clase de los 3 botones de ver mas -->
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Este es el segundo libro -->
-      <div class="book-item">
-        <div class="book">
-          <div class="book__image" style="background-image: url(https://image.slidesharecdn.com/fisicaparacienciaseingenieriaserway-jewett7maed-141022224459-conversion-gate02/95/fisica-para-ciencias-e-ingenieria-serway-jewett-7ma-ed-vol-1-1-638.jpg?cb=1414018077)" ></div>
-          <div class="book__footer">
-            <div class="book__meta">
-              <div class="book__title">
-                Física de Serway
-              </div>
-              <div class="book__size">
-                15mb
-              </div>
-            </div>
-            <div class="book__actions">
-              <button class="book__more">
-                <i class="fa fa-ellipsis-v fa-5x"></i> <!-- Clase de los 3 botones de ver mas -->
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Este es el tercer libro -->
-      <div class="book-item">
-        <div class="book">
-          <div class="book__image" style="background-image: url(https://www.popularlibros.com/imagenes_grandes/9788478/978847829089.JPG)" ></div>
-          <div class="book__footer">
-            <div class="book__meta">
-              <div class="book__title">
-                Cálculo
-              </div>
-              <div class="book__size">
-                15mb
-              </div>
-            </div>
-            <div class="book__actions">
-              <button class="book__more">
-                <i class="fa fa-ellipsis-v fa-5x"></i> <!-- Clase de los 3 botones de ver mas -->
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Este es el cuarto libro -->
-      <div class="book-item">
-        <div class="book">
-          <div class="book__image" style="background-image: url(https://statics.convergencia.trevenque.es/portadas/Originales/PUBLIDISA_3/PUB0190599.jpg)" ></div>
-          <div class="book__footer">
-            <div class="book__meta">
-              <div class="book__title">
-                Matemáticas 2
-              </div>
-              <div class="book__size">
-                15mb
-              </div>
-            </div>
-            <div class="book__actions">
-              <button class="book__more">
-                <i class="fa fa-ellipsis-v fa-5x"></i> <!-- Clase de los 3 botones de ver mas -->
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> 
+      
+    </div> <!-- Finaliza contenido-->
   </body>
 </html>

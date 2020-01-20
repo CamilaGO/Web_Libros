@@ -16,9 +16,17 @@ h2{
     display: inline-block;
     font-size: 3rem;
     font-family: Trebuchet MS;
-    margin: 12px;
+    margin: 9px;
     color: #cccccc;
     font-style: bold;
+}
+h3{
+    font-size: 3rem;
+    font-family: Trebuchet MS;
+    margin: 9px;
+    color: #cccccc;
+    font-style: black;
+    align-self: auto;
 }
 
 /*** 
@@ -73,8 +81,38 @@ h2{
 }
 
 /***
-     Organizacion de las portadas de libros con flex
+     Organizacion del wrapper con asides, libros y secondheader
 ***/
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.left_menu {
+    display: flex;
+    height:600px;
+    width: 220px; 
+    flex-direction: column;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin-left: 0;
+    align-self: left;
+}
+.add-pack{
+    margin: 0.5px 0.5px;
+}
+.search_pack {
+    font-size: 3.5rem;
+    height: 100%;
+}
+
+/*
+     Organizacion de las portadas de libros con flex
+*/
 .books-container {
     padding: 20px;
     margin: 20px;
@@ -143,3 +181,4 @@ h2{
 .book__more:hover {
   color:  #818181;
 }
+

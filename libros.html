@@ -3,11 +3,44 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> <!-- Este sirve para los 3 botones de 'ver mas' en cada libro-->
     <title>Libros</title>
   </head>
   <body>
+    <!-- El el main header con flex -->
+    <header class="main-header">
+      <div class="header-container">
+        <nav class="school-nav">
+          <ul class="school-nav-list">
+            <li>
+              <h1 class="text-header">Colegio Montano</h1>
+            </li>
+            <li>
+              <h2 class="text-header">Libros electrónicos</h2>
+            </li>
+          </ul>
+        </nav>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Our clients</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div> 
+    </header><!-- Termina el main header con flex -->
+
+    <!-- Los libros ordenados con flex -->
     <div class="books-container">
       <!-- Este es el primer libro -->
       <div class="book-item">
@@ -37,7 +70,49 @@
           <div class="book__footer">
             <div class="book__meta">
               <div class="book__title">
-                Física de Serway g
+                Física de Serway
+              </div>
+              <div class="book__size">
+                15mb
+              </div>
+            </div>
+            <div class="book__actions">
+              <button class="book__more">
+                <i class="fa fa-ellipsis-v fa-5x"></i> <!-- Clase de los 3 botones de ver mas -->
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Este es el tercer libro -->
+      <div class="book-item">
+        <div class="book">
+          <div class="book__image" style="background-image: url(https://www.popularlibros.com/imagenes_grandes/9788478/978847829089.JPG)" ></div>
+          <div class="book__footer">
+            <div class="book__meta">
+              <div class="book__title">
+                Cálculo
+              </div>
+              <div class="book__size">
+                15mb
+              </div>
+            </div>
+            <div class="book__actions">
+              <button class="book__more">
+                <i class="fa fa-ellipsis-v fa-5x"></i> <!-- Clase de los 3 botones de ver mas -->
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Este es el cuarto libro -->
+      <div class="book-item">
+        <div class="book">
+          <div class="book__image" style="background-image: url(https://statics.convergencia.trevenque.es/portadas/Originales/PUBLIDISA_3/PUB0190599.jpg)" ></div>
+          <div class="book__footer">
+            <div class="book__meta">
+              <div class="book__title">
+                Matemáticas 2
               </div>
               <div class="book__size">
                 15mb

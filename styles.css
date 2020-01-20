@@ -10,16 +10,23 @@ h1{
     font-size: 6rem;
     font-family: Trebuchet MS;
     margin-right: 14px;
+    color: #00a09b;
 }
 h2{
     display: inline-block;
     font-size: 3rem;
     font-family: Trebuchet MS;
     margin: 12px;
+    color: #cccccc;
+    font-style: bold;
 }
-/*** Organizacion del main header con flex ***/
+
+/*** 
+    Organizacion del main header con flex 
+***/
 .header-container {
-    background-color: green;
+    background-color: white;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5); /*Esto da sombra a la imagen */
 }
 .main-header .header-container {
     display: flex;
@@ -55,18 +62,25 @@ h2{
     font-size: 4rem;
     font-weight: bold;
     font-style: black;
+    color: #00c4c0;
+    margin-right: 0.5rem;
 }
-
+.profile {
+    color: #04a19c;
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: black;
+}
 
 /***
      Organizacion de las portadas de libros con flex
 ***/
 .books-container {
     padding: 20px;
-    margin: 0;
+    margin: 20px;
     list-style: none;
     display: flex;
-    background-color: #F5FCFB;
+    background-color: #ecf5f5;
     justify-content: center;
     width: 50%;
 } 

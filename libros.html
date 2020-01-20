@@ -10,7 +10,7 @@
     <title>Libros</title>
   </head>
   <body>
-    <!-- El el main header con flex -->
+    <!-- El el header del colegio con flex -->
     <header class="main-header">
       <div class="header-container">
         <nav class="school-nav">
@@ -38,28 +38,27 @@
       </div> 
     </header><!-- Termina el main header con flex -->
 
-    <div class="wrapper"> <!--El wrapper de todo el contenido-->
-      
+    <aside class="left-container"> <!-- empieza el menu de la izquierda -->
       <!-- Menu paquetes por grado -->
-      <div class="left-menu">
-        <h2>PAQUETES</h2>
-        <h3 class="selected_pack"> Primero Básico (8)</h3>
-        <h3>Segundo Básico (12)</h3>
-        <h3>Tercero Básico (40)</h3>
-        <h3>Cuarto Bachillerato en Ciencias y Letas (5)</h3>
-        <h3>Quinto Bachillerato en Ciencias y Letas (5)</h3>
-        <h3>Cuarto Bachillerato en Ciencias y Letas (5)</h3>
-        <h3>Quinto Bachillerato en Ciencias y Letas (5)</h3>
-        <div class="pack_divider"></div>
+      <h2>PAQUETES</h2>
+      <h3 class="selected_pack"> Primero Básico (8)</h3>
+      <h3>Segundo Básico (12)</h3>
+      <h3>Tercero Básico (40)</h3>
+      <h3>Cuarto Bachillerato en Ciencias y Letas (5)</h3>
+      <h3>Quinto Bachillerato en Ciencias y Letas (5)</h3>
+      <h3>Cuarto Bachillerato en Ciencias y Letas (5)</h3>
+      <h3>Quinto Bachillerato en Ciencias y Letas (5)</h3>
+      <div class="pack_divider"></div>
         <div class="pack-actions">
           <h2>AGREGAR PAQUETE:</h2>
           <div class="add-pack">
             <input type="text" class="search_pack" placeholder="Escriba el nombre acá.." >
-            <i class="fa fa-plus-circle" style="font-size:30px;color:#2196F3;padding: 22px 3px"></i>
+            <i class="fa fa-plus-circle" style="font-size:30px;color:#2196F3;padding: 30px 3px"></i>
           </div>
         </div>
-      </div> <!-- Termina aside de paquetes -->
-
+    </aside>
+    <section class="main-wrapper"> <!--Main container -->
+      <nav class="selected-header"> <!-- Empieza el header de los libros -->
       <!-- Los libros ordenados con flex -->
       <div class="books-container">
         <!-- Este es el primer libro -->
@@ -146,8 +145,8 @@
             </div>
           </div>
         </div>
-      </div>
-      
-    </div> <!-- Finaliza contenido-->
+      </div> <!-- Terminan los libros -->
+      </nav>
+    </section>
   </body>
 </html>

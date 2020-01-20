@@ -3,6 +3,8 @@ html, body {
     /*  Esto se aplicara a todo la enmaquetacion */
     font-size: 4px;
     font-family: Trebuchet MS;
+    margin: 0;
+    background-color: #ecf5f5;
 }
 
 h1{
@@ -34,6 +36,7 @@ h3{
 ***/
 .header-container {
     background-color: white;
+    margin: 0 auto 0;
     box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5); /*Esto da sombra a la imagen */
 }
 .main-header .header-container {
@@ -84,43 +87,58 @@ h3{
      Organizacion del wrapper con asides, libros y secondheader
 ***/
 
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10rem;
-}
-
-.left_menu {
-    display: flex;
-    height:600px;
-    width: 220px; 
-    flex-direction: column;
+.left-container{
+    border: 2px solid red;
+    display: inline-block;
+    height: 400px;
+    margin: 0px 50px 0px 50px;
+    width: 20%;
     border-radius: 2rem;
     box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    margin-left: 0;
-    align-self: left;
+
 }
+
 .add-pack{
-    margin: 0.5px 0.5px;
+    margin: 0 10px;
 }
 .search_pack {
     font-size: 3.5rem;
     height: 100%;
 }
 
+/***
+     Organizacion main wrapper (libros y header con el paquete seleccionado)
+***/
+
+.main-wrapper{
+    border: solid 2px blue;
+    display: inline-block;
+    height: 450px;
+    margin: 0 20px 10px 5px;
+    width: 65%;
+    background-color: #ecf5f5;
+}
+
+/*
+     Organizacion del header de los libros
+*/
+.selected-header{
+    border: solid 2px black;
+    height: 85px;
+    margin: 20px auto 20px auto;
+}
+
 /*
      Organizacion de las portadas de libros con flex
 */
 .books-container {
-    padding: 20px;
-    margin: 20px;
+    margin: 100px 70px 0px 0;
     list-style: none;
     display: flex;
     background-color: #ecf5f5;
     justify-content: center;
-    width: 50%;
+    width: 80%;
+    height: 30%;
 } 
 .book-item{
     padding: 10px;

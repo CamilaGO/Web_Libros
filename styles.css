@@ -1,4 +1,3 @@
-@import "compass/css3";
 
 html, body {
     /*  Esto se aplicara a todo la enmaquetacion */
@@ -39,21 +38,29 @@ h2{
     padding: .5em 1.5em;
     font-size: 9px;
 }
-.main-nav ul {
+.personal-nav ul {
     margin: 1em 0 .5em;
     text-align: center;
 }
-.main-nav li {
-    display: inline;
-}
-.main-nav a {
+.personal-nav li {
     display: inline-block;
-    padding: .5em 1.5em;
-    font-size: 9px;
+    border-left: 1.5px solid whitesmoke;
+    font-size: 4rem;
+    margin: 1em 0 .5em;
+    padding: 9px 20px;
+    margin-bottom: 10px;
+}
+.password {
+    color: #019c97;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: black;
 }
 
 
-/*** Organizacion de las portadas de libros con flex ***/
+/***
+     Organizacion de las portadas de libros con flex
+***/
 .books-container {
     padding: 20px;
     margin: 0;
@@ -68,7 +75,7 @@ h2{
     margin-top: 10px;
     margin-bottom: 10px;
     width: 47%;
-    height: 47%;
+    height: 50%;
 }
 .book {
     border-radius: 2rem;

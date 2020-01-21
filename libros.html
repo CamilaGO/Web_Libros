@@ -56,9 +56,24 @@
             <i class="fa fa-plus-circle" style="font-size:30px;color:#00c4c0"></i>
           </div>
         </div>
-    </aside>
+    </aside> <!-- Termina menu de la izquierda -->
     <section class="main-wrapper"> <!--Main container -->
-      <nav class="selected-header"> <!-- Empieza el header de los libros -->
+
+      <div class="selected-header"> <!-- Empieza el header de los libros -->
+        <div class="books-header-container">
+            <h1>Primero Básico</h1>
+          <nav class="buttons-nav">
+            <ul class="buttons-nav-list">
+              <li>
+                <button class="add-book">AGREGAR LIBRO</button>
+              </li>
+              <li>
+                <button class="add-category">AGREGAR CATEGORÍA</button>
+              </li>
+            </ul>
+          </nav> 
+        </div> 
+      </div> <!-- Termina el header de los libros -->
       <!-- Los libros ordenados con flex -->
       <div class="books-container">
         <!-- Este es el primer libro -->
@@ -146,7 +161,6 @@
           </div>
         </div>
       </div> <!-- Terminan los libros -->
-      </nav>
     </section>
   </body>
 </html>

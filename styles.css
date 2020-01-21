@@ -148,7 +148,6 @@ h2.add-pack {
 ***/
 
 .main-wrapper{
-    border: solid 2px blue;
     display: inline-block;
     height: 450px;
     margin: 2px 20px 10px 5px;
@@ -160,8 +159,7 @@ h2.add-pack {
      Organizacion del header de los libros
 */
 .selected-header{
-    border: solid 2px black;
-    height: 85px;
+    height: 95px;
     margin: 10px auto 10px auto;
 }
 .books-header-container {
@@ -214,7 +212,41 @@ h2.add-pack {
     width: 180px;
     height: 40px;
 }
+.idioma-nav{
+    border-bottom: 2px solid #cccccc;
+}
+.idioma-nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin-top: 2rem;
+}
+.idioma-nav li {
+    display: inline-flex;
+    justify-content: space-around;
+}
 
+li.idioma-nav:hover {
+    color: blue;
+}
+.idioma-nav a {
+    display: inline-block;
+    padding: 3px;
+    font-size: 13px;
+    color: #cccccc;
+    margin: 0;
+    margin-left: 14px;
+}
+a.english{
+    margin-left: 30px;
+}
+a.english:hover {
+    color: #00a09b;
+    font-weight: bold;
+}
+a.spanish:hover {
+    color: #00a09b;
+    font-weight: bold;
+}
 /*
      Organizacion de las portadas de libros con flex
 */
